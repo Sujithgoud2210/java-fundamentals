@@ -1,4 +1,4 @@
-package com.stschool.java.fundamentals.level1;
+package com.java.fundamentals.level1;
 
 public class HelloWorld {
     public static void main(String[] args) {
