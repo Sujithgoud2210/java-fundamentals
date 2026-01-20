@@ -1,18 +1,16 @@
-package com.stschool.java.fundamentals;
+package com.stschool.java.fundamentals.level1;
 
 import java.util.Scanner;
 
-public class SumOfOddNaturalNumbers {
+public class OddNumbers {
     public static void main(String[] args) {
-        int number, sum = 0;
+        int number;
         Scanner sc = new Scanner(System.in);
         System.out.println("enter number");
         number = sc.nextInt();
         for (int i = 1; i <= number; i++) {
-            if(i%2!=0) {
-                sum = sum + i;
-            }
+            if (i % 2 != 0)
+                System.out.print(i+" ");
         }
-        System.out.println("Sum of given even natural number"+"="+sum );
     }
 }
