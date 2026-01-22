@@ -1,8 +1,10 @@
 package com.stschool.java;
 
+import java.util.Scanner;
+
 public class TakeInput {
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
         byte age, hours, minutes, seconds, months, daysInMonths;
         age = 22;
         hours = 24;
@@ -10,11 +12,23 @@ public class TakeInput {
         seconds = 30;
         months = 12;
         daysInMonths = 28;
+        System.out.println();
+        sc.nextByte();
         System.out.println("Age : " + age);
+        System.out.println();
+
         System.out.println("hours = " + hours);
+        System.out.println();
+
         System.out.println("minutes = " + minutes);
+        System.out.println();
+
         System.out.println("seconds = " + seconds);
+        System.out.println();
+
         System.out.println("months = " + months);
+        System.out.println();
+
         System.out.println("daysInMonths = " + daysInMonths);
         short year;
         year = 2026;
