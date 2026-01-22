@@ -4,55 +4,111 @@ import java.util.Scanner;
 
 public class TakeInput {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
-        byte age, hours, minutes, seconds, months, daysInMonths;
-        daysInMonths = 28;
-        System.out.println("enter age ");
-        age=sc.nextByte();
-        System.out.println("Age : " + age);
-        System.out.println("enter hours ");
-        hours=sc.nextByte();
-        System.out.println("hours = " + hours);
-        System.out.println("enter minutes ");
-        minutes=sc.nextByte();
-        System.out.println("minutes = " + minutes);
-        System.out.println("enter seconds ");
-        seconds=sc.nextByte();
-        System.out.println("seconds = " + seconds);
-        System.out.println("enter months ");
-        months=sc.nextByte();
-        System.out.println("months = " + months);
-        System.out.println("enter days in months ");
-        daysInMonths=sc.nextByte();
-        System.out.println("daysInMonths = " + daysInMonths);
-        short year;
-        year=2026;
-        System.out.println("year : " + year);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        int salary;
-        salary = 45000;
-        System.out.println("salary = " + salary);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        long number;
-        number = 799704717012L;
-        System.out.println("number : " + number);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        float rating;
-        rating = 9.8f;
-        System.out.println("rating = " + rating);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        double hi;
+
+        byte age, hours, minutes, seconds, months, daysInMonth;
+        short year, marks, fourDigitOTP, hotelRoomNumber, pagesInABook, apartmentRoomNumber;
+        int salary, sixDigitOTP, rollNumber;
+        long largeNumber, numberOfStars, populationOfCountry, nationBudget;
+        float rating, overs, height, petrolPrice, marksPercentage;
+
+        System.out.print("Enter age: ");
+        age = sc.nextByte();
+        System.out.println("Age = " + age);
+
+        System.out.print("Enter hours: ");
+        hours = sc.nextByte();
+        System.out.println("Hours = " + hours);
+
+        System.out.print("Enter minutes: ");
+        minutes = sc.nextByte();
+        System.out.println("Minutes = " + minutes);
+
+        System.out.print("Enter seconds: ");
+        seconds = sc.nextByte();
+        System.out.println("Seconds = " + seconds);
+
+        System.out.print("Enter months: ");
+        months = sc.nextByte();
+        System.out.println("Months = " + months);
+
+        System.out.print("Enter days in month: ");
+        daysInMonth = sc.nextByte();
+        System.out.println("Days in Month = " + daysInMonth);
+
+        System.out.print("Enter year: ");
+        year = sc.nextShort();
+        System.out.println("Year = " + year);
+
+        System.out.print("Enter marks: ");
+        marks = sc.nextShort();
+        System.out.println("Marks = " + marks);
+
+        System.out.print("Enter four digit OTP: ");
+        fourDigitOTP = sc.nextShort();
+        System.out.println("Four Digit OTP = " + fourDigitOTP);
+
+        System.out.print("Enter hotel room number: ");
+        hotelRoomNumber = sc.nextShort();
+        System.out.println("Hotel Room Number = " + hotelRoomNumber);
+
+        System.out.print("Enter pages in a book: ");
+        pagesInABook = sc.nextShort();
+        System.out.println("Pages in a Book = " + pagesInABook);
+
+        System.out.print("Enter apartment room number: ");
+        apartmentRoomNumber = sc.nextShort();
+        System.out.println("Apartment Room Number = " + apartmentRoomNumber);
+
+        System.out.print("Enter salary: ");
+        salary = sc.nextInt();
+        System.out.println("Salary = " + salary);
+
+        System.out.print("Enter six digit OTP: ");
+        sixDigitOTP = sc.nextInt();
+        System.out.println("Six Digit OTP = " + sixDigitOTP);
+
+        System.out.print("Enter roll number: ");
+        rollNumber = sc.nextInt();
+        System.out.println("Roll Number = " + rollNumber);
+
+        System.out.print("Enter large number: ");
+        largeNumber = sc.nextLong();
+        System.out.println("Large Number = " + largeNumber);
+
+        System.out.print("Enter number of stars: ");
+        numberOfStars = sc.nextLong();
+        System.out.println("Number of Stars = " + numberOfStars);
+
+        System.out.print("Enter population of country: ");
+        populationOfCountry = sc.nextLong();
+        System.out.println("Population of Country = " + populationOfCountry);
+
+        System.out.print("Enter nation budget: ");
+        nationBudget = sc.nextLong();
+        System.out.println("Nation Budget = " + nationBudget);
+
+        System.out.print("Enter rating: ");
+        rating = sc.nextFloat();
+        System.out.println("Rating = " + rating);
+
+        System.out.print("Enter overs: ");
+        overs = sc.nextFloat();
+        System.out.println("Overs = " + overs);
+
+        System.out.print("Enter height: ");
+        height = sc.nextFloat();
+        System.out.println("Height = " + height);
+
+        System.out.print("Enter petrol price: ");
+        petrolPrice = sc.nextFloat();
+        System.out.println("Petrol Price = " + petrolPrice);
+
+        System.out.print("Enter marks percentage: ");
+        marksPercentage = sc.nextFloat();
+        System.out.println("Marks Percentage = " + marksPercentage);
+
+        sc.close();
     }
 }
