@@ -6,32 +6,26 @@ public class TakeInput {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         byte age, hours, minutes, seconds, months, daysInMonths;
-        age = 22;
-        hours = 24;
-        minutes = 10;
-        seconds = 30;
-        months = 12;
         daysInMonths = 28;
-        System.out.println();
-        sc.nextByte();
+        System.out.println("enter age ");
+        age=sc.nextByte();
         System.out.println("Age : " + age);
-        System.out.println();
-
+        System.out.println("enter hours ");
+        hours=sc.nextByte();
         System.out.println("hours = " + hours);
-        System.out.println();
-
+        System.out.println("enter minutes ");
+        minutes=sc.nextByte();
         System.out.println("minutes = " + minutes);
-        System.out.println();
-
+        System.out.println("enter seconds ");
+        seconds=sc.nextByte();
         System.out.println("seconds = " + seconds);
-        System.out.println();
-
+        System.out.println("enter months ");
+        months=sc.nextByte();
         System.out.println("months = " + months);
-        System.out.println();
-
+        System.out.println("enter days in months ");
+        daysInMonths=sc.nextByte();
         System.out.println("daysInMonths = " + daysInMonths);
         short year;
-        year = 2026;
         System.out.println("year : " + year);
         System.out.println();
         System.out.println();

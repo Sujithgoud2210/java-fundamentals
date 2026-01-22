@@ -37,22 +37,25 @@ public class Primitives {
         System.out.println();
         long number, numberOfStars, populationOfACountry, numberOfMilkywayGalaxy;
         number = 799704717012L;
+        numberOfStars=370247098409280L;
+        populationOfACountry=789789780870L;
+        numberOfMilkywayGalaxy=317376716913L;
         System.out.println("number : " + number);
         System.out.println();
         System.out.println();
         System.out.println();
         System.out.println();
-        float rating, overs,height,petrolPrice, marksPercentage;
+        float rating, overs, height, petrolPrice, marksPercentage;
         rating = 9.8f;
-        overs=5.5f;
-        height=5.9f;
-        petrolPrice=107.8f;
-        marksPercentage=75.5f;
+        overs = 5.5f;
+        height = 5.9f;
+        petrolPrice = 107.8f;
+        marksPercentage = 75.5f;
         System.out.println("rating = " + rating);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("overs" + overs);
+        System.out.println("height" + height);
+        System.out.println("petrolPrice" + petrolPrice);
+        System.out.println("marksPercentage" + marksPercentage);
         double hi;
     }
 }
