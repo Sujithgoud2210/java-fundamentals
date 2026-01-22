@@ -1,4 +1,4 @@
-package com.java.fundamentals;
+package com.stschool.java;
 
 public class HelloWorld {
     public static void main(String[] args) {
