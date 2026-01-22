@@ -26,6 +26,7 @@ public class TakeInput {
         daysInMonths=sc.nextByte();
         System.out.println("daysInMonths = " + daysInMonths);
         short year;
+        year=2026;
         System.out.println("year : " + year);
         System.out.println();
         System.out.println();

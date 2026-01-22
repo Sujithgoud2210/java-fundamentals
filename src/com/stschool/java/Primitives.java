@@ -28,23 +28,26 @@ public class Primitives {
         System.out.println("hotelRoomNUmber : " + hotelRoomNUmber);
         System.out.println("pagesInABook : " + pagesInABook);
         System.out.println("apartmentRoomNumber : " + apartmentRoomNumber);
-        int salary, sixDigitOTP;
+        int salary, sixDigitOTP, rollNumber;
         salary = 45000;
+        sixDigitOTP = 247229;
+        rollNumber = 763839372;
         System.out.println("salary = " + salary);
+        System.out.println("sixDigitOTP"+sixDigitOTP);
+        System.out.println("rollNumber"+rollNumber);
         System.out.println();
         System.out.println();
-        System.out.println();
-        System.out.println();
-        long number, numberOfStars, populationOfACountry, numberOfMilkywayGalaxy;
+        long number, numberOfStars, populationOfACountry, numberOfMilkywayGalaxy, nationBudget;
         number = 799704717012L;
-        numberOfStars=370247098409280L;
-        populationOfACountry=789789780870L;
-        numberOfMilkywayGalaxy=317376716913L;
+        numberOfStars = 370247098409280L;
+        populationOfACountry = 789789780870L;
+        numberOfMilkywayGalaxy = 317376716913L;
+        nationBudget = 378289474183387L;
         System.out.println("number : " + number);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("numberOfStars" + numberOfStars);
+        System.out.println("populationOfACountry" + populationOfACountry);
+        System.out.println("numberOfMilkywayGalaxy" + numberOfMilkywayGalaxy);
+        System.out.println("nationBudget" + nationBudget);
         float rating, overs, height, petrolPrice, marksPercentage;
         rating = 9.8f;
         overs = 5.5f;
@@ -56,6 +59,5 @@ public class Primitives {
         System.out.println("height" + height);
         System.out.println("petrolPrice" + petrolPrice);
         System.out.println("marksPercentage" + marksPercentage);
-        double hi;
     }
 }
