@@ -2,21 +2,22 @@ package com.java.fundamentals.level2;
 
 import java.util.Scanner;
 
-public class SmallestDigit {
+public class EvenOddCount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int number, digit, small ;
+        int number, even = 0, odd = 0, digit;
         System.out.println("enter a number");
         number = sc.nextInt();
-        small=number%10;
         while (number > 0) {
             digit = number % 10;
-            if (digit < small) {
-                small = digit;
+            if (digit % 2 == 0) {
+                even++;
+            } else {
+                odd++;
             }
             number = number / 10;
         }
-        System.out.println("small = " + small);
-
+        System.out.println("even = " + even);
+        System.out.println("odd = " + odd);
     }
 }
