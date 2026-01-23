@@ -9,8 +9,8 @@ public class SumOfNaturalNumbers {
         System.out.println("enter number");
         number = sc.nextInt();
         for (int i = 1; i <= number; i++) {
-            sum = sum+ i;
+            sum = sum + i;
         }
-        System.out.println("Sum of given natural number"+"="+sum );
+        System.out.println("Sum of given natural number" + "=" + sum);
     }
 }

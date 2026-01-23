@@ -10,7 +10,7 @@ public class OddNumbers {
         number = sc.nextInt();
         for (int i = 1; i <= number; i++) {
             if (i % 2 != 0)
-                System.out.print(i+" ");
+                System.out.print(i + " ");
         }
     }
 }

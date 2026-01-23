@@ -2,22 +2,22 @@ package com.java.fundamentals.level2;
 
 import java.util.Scanner;
 
-public class PalindromeNUmber {
+public class ArmStrong {
     public static void main(String[] args) {
-        int number, digit, reverse = 0, original;
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter number");
+        int number, digit , cube = 0, original;
+        System.out.println("enter a number");
         number = sc.nextInt();
         original = number;
         while (number > 0) {
             digit = number % 10;
-            reverse = reverse * 10 + digit;
+            cube = cube + digit * digit * digit;
             number = number / 10;
         }
-        if (original == reverse) {
-            System.out.println("palindrome");
+        if (cube == original) {
+            System.out.println("armstrong number");
         } else {
-            System.out.println("not a palindrome");
+            System.out.println("not a armstrong number");
         }
     }
 }

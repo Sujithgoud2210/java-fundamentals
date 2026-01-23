@@ -8,11 +8,10 @@ public class PrintDigits {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter number");
         number = sc.nextInt();
-        while(number>0)
-        {
-            digit=number%10;
+        while (number > 0) {
+            digit = number % 10;
             System.out.println(digit);
-            number=number/10;
+            number = number / 10;
         }
     }
 }

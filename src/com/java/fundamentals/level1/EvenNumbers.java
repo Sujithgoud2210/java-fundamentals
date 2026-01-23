@@ -1,5 +1,7 @@
 package com.java.fundamentals.level1;
+
 import java.util.Scanner;
+
 public class EvenNumbers {
     public static void main(String[] args) {
         int number;
@@ -8,7 +10,7 @@ public class EvenNumbers {
         number = sc.nextInt();
         for (int i = 1; i <= number; i++) {
             if (i % 2 == 0)
-                System.out.print(i+" ");
+                System.out.print(i + " ");
         }
     }
 }
