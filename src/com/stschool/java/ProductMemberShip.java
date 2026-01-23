@@ -6,12 +6,12 @@ public class ProductMemberShip {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int productPrice, quantity;
-        float discountPercentage, shippingCharges, centralTax, stateTax, finalPrice, DiscountedPrice, discountAmount, stateTaxAmount, centralTaxAmount, finalBill, totalSaved, savedAmount;
+        float discountPercentage, shippingCharges, centralTax, stateTax, finalPrice, DiscountedPrice, discountAmount = 0, stateTaxAmount, centralTaxAmount, finalBill, totalSaved, savedAmount;
         centralTax = 2.5f;
         stateTax = 2.5f;
         System.out.print("enter product price = ");
         productPrice = sc.nextInt();
-        System.out.print("enter membership details");
+        System.out.println("enter membership details");
         System.out.println(" S for silver ");
         System.out.println("G for gold");
         System.out.println("D for diamond");
@@ -29,6 +29,8 @@ public class ProductMemberShip {
             discountPercentage = 20;
             discountAmount = (productPrice * discountPercentage) / 100;
             shippingCharges = 0;
+        } else {
+            shippingCharges = 100;
         }
         System.out.println("product price = " + productPrice);
         DiscountedPrice = productPrice - discountAmount;
@@ -46,5 +48,6 @@ public class ProductMemberShip {
         totalSaved = quantity * savedAmount;
         System.out.println("Final  Bill = " + finalBill);
         System.out.println("Total Saved = " + totalSaved);
+        sc.close();
     }
 }
