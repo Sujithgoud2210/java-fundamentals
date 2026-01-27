@@ -15,9 +15,8 @@ public class PrimeUptoN {
                     count++;
                 }
             }
-                if (count == 2) {
-                    System.out.println(number + " ");
-                }
+                if (count == 2)
+                    System.out.println(N + " ");
         }
     }
 //    public static void main(String[] args) {
