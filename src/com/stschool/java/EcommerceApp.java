@@ -60,12 +60,13 @@ public class EcommerceApp {
                     if (quantity > availableStock) {
                         System.out.println("stock is not available");
                         System.out.println("available stock = " + availableStock);
+                    }else {
+                        availableStock = availableStock - quantity;
+                        finalBill = finalPrice * quantity + shippingCharges;
+                        totalSaved = quantity * savedAmount;
+                        System.out.println("Final  Bill = " + finalBill);
+                        System.out.println("Total Saved = " + totalSaved);
                     }
-                    availableStock = availableStock - quantity;
-                    finalBill = finalPrice * quantity + shippingCharges;
-                    totalSaved = quantity * savedAmount;
-                    System.out.println("Final  Bill = " + finalBill);
-                    System.out.println("Total Saved = " + totalSaved);
                     System.out.println("Thanks for shopping with us");
                     System.out.println("Do you want to continue(Y/N)");
                     break;
