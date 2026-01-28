@@ -2,11 +2,11 @@ package com.stschool.java;
 
 import java.util.Scanner;
 
-public class ProductMemberShip {
+public class SwitchCaseForProductDiscount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int productPrice, quantity;
-        float discountPercentage = 0, shippingCharges, centralTax, stateTax, finalPrice, DiscountedPrice, discountAmount, stateTaxAmount, centralTaxAmount, finalBill, totalSaved, savedAmount;
+        float discountPercentage, shippingCharges, centralTax, stateTax, finalPrice, DiscountedPrice, discountAmount = 0, stateTaxAmount, centralTaxAmount, finalBill, totalSaved, savedAmount;
         centralTax = 2.5f;
         stateTax = 2.5f;
         System.out.print("enter product price = ");
@@ -15,21 +15,27 @@ public class ProductMemberShip {
         System.out.println(" S for silver ");
         System.out.println("G for gold");
         System.out.println("D for diamond");
-        System.out.println("else you don't have membership");
+        System.out.println("else you dont have membership");
         char membership = sc.next().charAt(0);
-        if (membership == 'S') {
-            discountPercentage = 10;
-            shippingCharges = 50;
-        } else if (membership == 'G') {
-            discountPercentage = 15;
-            shippingCharges = 20;
-        } else if (membership == 'D') {
-            discountPercentage = 20;
-            shippingCharges = 0;
-        } else {
-            shippingCharges = 100;
+        switch (membership){
+            case 'S' :
+                discountPercentage = 10;
+                discountAmount = (productPrice * discountPercentage) / 100;
+                shippingCharges = 50;
+                break;
+            case 'G' :
+                discountPercentage = 15;
+                discountAmount = (productPrice * discountPercentage) / 100;
+                shippingCharges = 20;
+                break;
+            case 'D' :
+                discountPercentage = 20;
+                discountAmount = (productPrice * discountPercentage) / 100;
+                shippingCharges = 0;
+                break;
+            default:  shippingCharges = 100;
+            break;
         }
-        discountAmount = (productPrice * discountPercentage) / 100;
         System.out.println("product price = " + productPrice);
         DiscountedPrice = productPrice - discountAmount;
         System.out.println("Discount Amount = " + discountAmount);
