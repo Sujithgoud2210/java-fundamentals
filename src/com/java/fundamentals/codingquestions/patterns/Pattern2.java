@@ -10,8 +10,8 @@ public class Pattern2 {
         number=sc.nextInt();
         for(int row=1;row<=number;row++)
         {
-            for(int column=1;column<=number;column++){
-                System.out.print("*");
+            for(int column=1;column<=number*2;column++){
+                System.out.print("*"+" ");
             }
             System.out.println();
         }
