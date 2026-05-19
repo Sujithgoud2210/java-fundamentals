@@ -6,7 +6,6 @@ public class TakeInput {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
         byte age, hours, minutes, seconds, months, daysInMonth;
         short year, marks, fourDigitOTP, hotelRoomNumber, pagesInABook, apartmentRoomNumber;
         int salary, sixDigitOTP, rollNumber;

@@ -2,7 +2,7 @@ package com.java.fundamentals.codingquestions.level1;
 
 import java.util.Scanner;
 
-public class PrintDigits {
+public class    PrintDigits {
     public static void main(String[] args) {
         int number, digit;
         Scanner sc = new Scanner(System.in);
